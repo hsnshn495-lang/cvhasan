@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum Vitae Profesional - Hasan">
+  <title>Curriculum Vitae | Hasan</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-badge">H</span>
+        <span class="logo-text">Hasan<span>.CV</span></span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#biodata" class="nav-link active">
+              <i class="fa-regular fa-user"></i> Biodata
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#pendidikan" class="nav-link">
+              <i class="fa-solid fa-graduation-cap"></i> Pendidikan
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#pengalaman" class="nav-link">
+              <i class="fa-solid fa-briefcase"></i> Pengalaman
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#keahlian" class="nav-link">
+              <i class="fa-solid fa-code"></i> Keahlian
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#kontak" class="nav-link">
+              <i class="fa-regular fa-envelope"></i> Kontak
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="galeri.html" class="nav-link">
+              <i class="fa-solid fa-camera-retro"></i> Galeri Kegiatan
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-btn" id="theme-btn" aria-label="Ganti Tema Mode Gelap/Terang" title="Ubah Tema">
+          <i class="fa-regular fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Print/Download CV Button -->
+        <button class="btn-print" id="btn-print" title="Cetak atau Simpan sebagai PDF">
+          <i class="fa-solid fa-print"></i>
+          <span>Cetak CV</span>
+        </button>
+
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="nav-toggle" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    
+    <!-- Hero / Ringkasan Utama -->
+    <section class="hero section" id="hero">
+      <div class="hero-container container grid">
+        <div class="hero-data">
+          <div class="badge-status">
+            <span class="status-dot"></span> Siap untuk Peluang & Kolaborasi Baru
+          </div>
+          <h1 class="hero-title">
+            Halo, Saya <span class="text-gradient">Hasan</span>
+          </h1>
+          <h2 class="hero-subtitle">Field Education di Ruangguru</h2>
+          <p class="hero-description">
+            Profesional yang berdedikasi dalam bidang edukasi dan teknologi, berpengalaman dalam sosialisasi program pembelajaran digital, konsultasi pendidikan siswa dan orang tua, serta membangun kemitraan strategis dengan sekolah-sekolah bersama Ruangguru.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#kontak" class="btn btn-primary">
+              <i class="fa-regular fa-paper-plane"></i> Hubungi Saya
+            </a>
+            <a href="galeri.html" class="btn btn-outline" title="Lihat Galeri Foto Kegiatan Seharian">
+              <i class="fa-solid fa-camera-retro"></i> Galeri Kegiatan
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="mailto:hasan.email@example.com" class="social-link" title="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-img-wrapper">
+          <div class="avatar-card">
+            <div class="avatar-inner">
+              <!-- Placeholder avatar icon / ilustrasi elegan -->
+              <div class="avatar-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <div class="floating-badge badge-1">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Pengalaman</strong>
+                <small>Kerja & Organisasi Aktif</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <strong>Keahlian</strong>
+                <small>Teknis & Problem Solving</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. BIODATA DIRI -->
+    <section class="biodata section" id="biodata">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profil</span>
+          <h2 class="section-title">Biodata Diri</h2>
+          <p class="section-subtitle">Informasi personal dan profil ringkas mengenai latar belakang saya</p>
+        </div>
+
+        <div class="biodata-content grid">
+          <!-- Tentang Saya Card -->
+          <div class="card bio-about-card">
+            <h3 class="card-title">
+              <i class="fa-regular fa-id-card"></i> Tentang Saya
+            </h3>
+            <p class="bio-text">
+              Saya adalah seorang pembelajar cepat (quick learner) yang menyukai tantangan dan selalu antusias terhadap inovasi baru. Berbekal komitmen kuat dan etos kerja yang tinggi, saya senantiasa berorientasi pada hasil terbaik serta mampu bekerja mandiri maupun berkolaborasi dalam tim yang dinamis.
+            </p>
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <span class="highlight-number">100%</span>
+                <span class="highlight-label">Dedikasi & Komitmen</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">Fast</span>
+                <span class="highlight-label">Adaptasi & Belajar</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">Team</span>
+                <span class="highlight-label">Kolaborasi Efektif</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rincian Data Pribadi -->
+          <div class="card bio-details-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-list-check"></i> Informasi Pribadi
+            </h3>
+            <div class="bio-list">
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-signature"></i> Nama Lengkap</span>
+                <span class="bio-value">Hasan</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-calendar-days"></i> Tempat, Tanggal Lahir</span>
+                <span class="bio-value">Indonesia, 15 Mei 2002</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-location-dot"></i> Domisili</span>
+                <span class="bio-value">Jakarta, Indonesia</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-envelope"></i> Email</span>
+                <span class="bio-value">
+                  <a href="mailto:hasan.email@example.com" class="interactive-link">hasan.email@example.com</a>
+                </span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-phone"></i> Nomor Kontak</span>
+                <span class="bio-value">+62 812-3456-7890</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-language"></i> Bahasa</span>
+                <span class="bio-value">Bahasa Indonesia (Aktif/Native), Bahasa Inggris (Menengah)</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key"><i class="fa-solid fa-flag"></i> Kewarganegaraan</span>
+                <span class="bio-value">Indonesia (WNI)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BACKGROUND PENDIDIKAN -->
+    <section class="pendidikan section" id="pendidikan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Akademik</span>
+          <h2 class="section-title">Background Pendidikan</h2>
+          <p class="section-subtitle">Riwayat pendidikan formal dan sertifikasi pelatihan yang telah saya selesaikan</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-meta">
+                <span class="timeline-badge">2020 - 2024</span>
+                <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Indonesia</span>
+              </div>
+              <h3 class="timeline-title">S1 - Teknik Informatika / Ilmu Komputer</h3>
+              <h4 class="timeline-institution">Universitas Terkemuka di Indonesia</h4>
+              <p class="timeline-desc">
+                Fokus studi pada rekayasa perangkat lunak, struktur data & algoritma, sistem basis data, serta kecerdasan buatan. Lulus dengan predikat Sangat Memuaskan (IPK: 3.82 / 4.00).
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Skripsi / Tugas Akhir Terkait Web & AI</span>
+                <span class="tag">Asisten Laboratorium</span>
+                <span class="tag">IPK 3.82</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-meta">
+                <span class="timeline-badge">2017 - 2020</span>
+                <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Indonesia</span>
+              </div>
+              <h3 class="timeline-title">SMA / SMK - Jurusan IPA / Rekayasa Perangkat Lunak</h3>
+              <h4 class="timeline-institution">SMA Negeri Unggulan</h4>
+              <p class="timeline-desc">
+                Mendalami sains dan matematika dasar komputasi. Aktif dalam kegiatan ekstrakurikuler sains, olimpiade komputer, dan kepengurusan sekolah.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Juara Olimpiade Sains Sekolah</span>
+                <span class="tag">Pengurus Ekskul Komputer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 (Pelatihan / Sertifikasi) -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-meta">
+                <span class="timeline-badge">2023 - 2024</span>
+                <span class="timeline-location"><i class="fa-solid fa-globe"></i> Kredensial Online</span>
+              </div>
+              <h3 class="timeline-title">Sertifikasi Profesional & Pelatihan Khusus</h3>
+              <h4 class="timeline-institution">Platform Sertifikasi Global & Nasional</h4>
+              <ul class="cert-list">
+                <li><i class="fa-solid fa-check"></i> <strong>Full-Stack Web Development Bootcamp</strong> - Menguasai Frontend modern & RESTful API</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Responsive Web Design Certificate</strong> - Sertifikasi standar W3C & aksesibilitas</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Git & GitHub Version Control Professional</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PENGALAMAN KERJA & ORGANISASI -->
+    <section class="pengalaman section" id="pengalaman">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio & Rekam Jejak</span>
+          <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
+          <p class="section-subtitle">Perjalanan profesional dan keterlibatan aktif dalam kepemimpinan organisasi</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-layer-group"></i> Semua Pengalaman
+          </button>
+          <button class="filter-btn" data-filter="kerja">
+            <i class="fa-solid fa-briefcase"></i> Pengalaman Kerja
+          </button>
+          <button class="filter-btn" data-filter="organisasi">
+            <i class="fa-solid fa-users"></i> Pengalaman Organisasi
+          </button>
+        </div>
+
+        <div class="experience-grid grid">
+          <!-- Item Kerja 1 -->
+          <div class="card experience-card" data-category="kerja">
+            <div class="exp-type-badge kerja" style="background: rgba(0, 190, 214, 0.15); color: #0284c7;">
+              <i class="fa-solid fa-chalkboard-user"></i> Field Education
+            </div>
+            <div class="exp-header">
+              <h3 class="exp-role">Field Education Specialist</h3>
+              <h4 class="exp-company">Ruangguru (PT Ruang Raya Indonesia)</h4>
+              <div class="exp-period">
+                <i class="fa-regular fa-calendar"></i> 2023 - Sekarang &bull; Penuh Waktu
+              </div>
+            </div>
+            <p class="exp-summary">
+              Bertanggung jawab dalam mengedukasi ekosistem pendidikan sekolah, sosialisasi produk pembelajaran digital terpadu Ruangguru, serta konsultasi bimbingan belajar bagi siswa dan orang tua.
+            </p>
+            <ul class="exp-tasks">
+              <li>Melakukan kunjungan dan sosialisasi program edukasi digital ke lebih dari 50+ sekolah mitra (SMP & SMA).</li>
+              <li>Memberikan konsultasi pendidikan terarah kepada ratusan siswa terkait strategi belajar, persiapan UTBK/SNBT, dan pemilihan paket belajar.</li>
+              <li>Membangun komunikasi persuasif dengan orang tua murid dan pihak sekolah untuk pendampingan belajar jangka panjang.</li>
+              <li>Konsisten mencapai target akuisisi pengguna baru dan menjaga kepuasan serta retensi siswa.</li>
+            </ul>
+            <div class="exp-skills">
+              <span class="skill-tag">Educational Consulting</span>
+              <span class="skill-tag">Public Speaking & Presentasi</span>
+              <span class="skill-tag">School Partnership</span>
+              <span class="skill-tag">Client Relationship</span>
+              <span class="skill-tag">Product Knowledge Ruangguru</span>
+            </div>
+          </div>
+
+          <!-- Item Kerja 2 -->
+          <div class="card experience-card" data-category="kerja">
+            <div class="exp-type-badge kerja">
+              <i class="fa-solid fa-briefcase"></i> Magang
+            </div>
+            <div class="exp-header">
+              <h3 class="exp-role">Junior Web Developer Intern</h3>
+              <h4 class="exp-company">Creative Inovasi Studio</h4>
+              <div class="exp-period">
+                <i class="fa-regular fa-calendar"></i> 2022 - 2023 &bull; Magang
+              </div>
+            </div>
+            <p class="exp-summary">
+              Membangun website profil perusahaan responsif dan sistem manajemen konten sederhana untuk klien UMKM.
+            </p>
+            <ul class="exp-tasks">
+              <li>Membangun website responsif mobile-friendly untuk 5+ klien korporat.</li>
+              <li>Melakukan pengujian bug (cross-browser testing) dan perbaikan tata letak UI.</li>
+              <li>Menyusun dokumentasi teknis penggunaan website untuk tim non-teknis klien.</li>
+            </ul>
+            <div class="exp-skills">
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Item Organisasi 1 -->
+          <div class="card experience-card" data-category="organisasi">
+            <div class="exp-type-badge organisasi">
+              <i class="fa-solid fa-users"></i> Organisasi
+            </div>
+            <div class="exp-header">
+              <h3 class="exp-role">Ketua Divisi Hubungan Masyarakat & Publikasi</h3>
+              <h4 class="exp-company">Himpunan Mahasiswa Informatika (HIMA-IF)</h4>
+              <div class="exp-period">
+                <i class="fa-regular fa-calendar"></i> 2022 - 2023 &bull; 1 Periode Kepengurusan
+              </div>
+            </div>
+            <p class="exp-summary">
+              Memimpin 12 anggota divisi untuk mengelola strategi komunikasi eksternal, branding kegiatan jurusan, serta kemitraan sponsorship.
+            </p>
+            <ul class="exp-tasks">
+              <li>Memimpin publikasi acara IT Expo tingkat nasional dengan total peserta lebih dari 1.000 orang.</li>
+              <li>Meningkatkan interaksi media sosial organisasi sebesar 150% dalam 6 bulan masa kepengurusan.</li>
+              <li>Mengkoordinasikan kerjasama dengan 10+ media partner dan sponsor teknologi.</li>
+            </ul>
+            <div class="exp-skills">
+              <span class="skill-tag">Kepemimpinan</span>
+              <span class="skill-tag">Public Relations</span>
+              <span class="skill-tag">Manajemen Acara</span>
+              <span class="skill-tag">Komunikasi Tim</span>
+            </div>
+          </div>
+
+          <!-- Item Organisasi 2 -->
+          <div class="card experience-card" data-category="organisasi">
+            <div class="exp-type-badge organisasi">
+              <i class="fa-solid fa-users"></i> Organisasi
+            </div>
+            <div class="exp-header">
+              <h3 class="exp-role">Koordinator Tim Teknis & Web</h3>
+              <h4 class="exp-company">Komunitas Pengembang Kampus (Developer Club)</h4>
+              <div class="exp-period">
+                <i class="fa-regular fa-calendar"></i> 2021 - 2022 &bull; Komunitas
+              </div>
+            </div>
+            <p class="exp-summary">
+              Menyelenggarakan workshop berkala seputar web development bagi mahasiswa baru dan pemula di bidang coding.
+            </p>
+            <ul class="exp-tasks">
+              <li>Menjadi pemateri dan instruktur hands-on workshop "Dasar Pemrograman Web" untuk 80+ peserta.</li>
+              <li>Mengelola repository GitHub komunitas dan membimbing anggota baru dalam penggunaan Git.</li>
+            </ul>
+            <div class="exp-skills">
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">Presentasi</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Git Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. KEAHLIAN (SKILLS) -->
+    <section class="keahlian section" id="keahlian">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2 class="section-title">Keahlian & Kemampuan</h2>
+          <p class="section-subtitle">Gambaran komprehensif keahlian teknis (hard skills) dan keterampilan interpersonal (soft skills)</p>
+        </div>
+
+        <div class="skills-wrapper grid">
+          <!-- Hard Skills / Teknis -->
+          <div class="card skill-group-card">
+            <div class="group-header">
+              <div class="group-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <h3 class="group-title">Keahlian Teknis (Hard Skills)</h3>
+                <p class="group-desc">Bahasa pemrograman, pengembangan web, dan tools pendukung</p>
+              </div>
+            </div>
+
+            <div class="skill-bars">
+              <!-- Skill Item -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5 text-orange"></i> HTML5 & CSS3 Semantik</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js text-yellow"></i> JavaScript (ES6+ & DOM)</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-mobile-screen text-blue"></i> Responsive & Mobile-First Design</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt text-red"></i> Git Version Control & GitHub</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill Item -->
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-server text-green"></i> RESTful API Integration & JSON</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tools-pills">
+              <span class="pill-label">Alat & Perangkat Lunak:</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">Figma (UI Slice)</span>
+              <span class="pill">Chrome DevTools</span>
+              <span class="pill">Postman</span>
+              <span class="pill">Terminal / PowerShell</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills & Kemampuan Interpersonal -->
+          <div class="card skill-group-card">
+            <div class="group-header">
+              <div class="group-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div>
+                <h3 class="group-title">Keahlian Interpersonal (Soft Skills)</h3>
+                <p class="group-desc">Karakter personal, manajemen, dan kemampuan kolaborasi kerja</p>
+              </div>
+            </div>
+
+            <div class="soft-skills-grid">
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-comments"></i></div>
+                <h4>Komunikasi Efektif</h4>
+                <p>Mampu menyampaikan ide teknis maupun non-teknis secara jelas dan diplomatis.</p>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h4>Problem Solving</h4>
+                <p>Pendekatan analitis dalam mengidentifikasi akar masalah serta mencari solusi konkret.</p>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-people-group"></i></div>
+                <h4>Kerja Sama Tim</h4>
+                <p>Mampu beradaptasi cepat dengan dinamika tim silang fungsi (cross-functional).</p>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-clock"></i></div>
+                <h4>Manajemen Waktu</h4>
+                <p>Terbiasa bekerja dengan tenggat waktu ketat secara disiplin dan teratur.</p>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-brain"></i></div>
+                <h4>Berpikir Kritis</h4>
+                <p>Evaluasi objektif untuk pengambilan keputusan berbasis data dan bukti.</p>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                <h4>Kemampuan Adaptasi</h4>
+                <p>Cepat menyesuaikan diri terhadap perkembangan teknologi dan lingkungan baru.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION KONTAK -->
+    <section class="kontak section" id="kontak">
+      <div class="container">
+        <div class="contact-box card">
+          <div class="contact-header">
+            <span class="section-tag">Hubungi Saya</span>
+            <h2 class="contact-title">Tertarik Berkolaborasi?</h2>
+            <p class="contact-desc">
+              Silakan hubungi saya melalui jalur komunikasi berikut. Saya selalu terbuka untuk diskusi proyek, peluang kerja sama, maupun pertukaran wawasan baru.
+            </p>
+          </div>
+
+          <div class="contact-methods grid">
+            <div class="contact-card" id="copy-email-btn" role="button" tabindex="0" title="Klik untuk menyalin email">
+              <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="c-info">
+                <span class="c-label">Kirim Pesan Email</span>
+                <span class="c-val">hasan.email@example.com</span>
+              </div>
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Salin</span>
+            </div>
+
+            <div class="contact-card" id="copy-phone-btn" role="button" tabindex="0" title="Klik untuk menyalin nomor WhatsApp">
+              <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="c-info">
+                <span class="c-label">WhatsApp / Telepon</span>
+                <span class="c-val">+62 812-3456-7890</span>
+              </div>
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Salin</span>
+            </div>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card link-card">
+              <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="c-info">
+                <span class="c-label">Profil Profesional</span>
+                <span class="c-val">linkedin.com/in/hasan</span>
+              </div>
+              <span class="copy-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <strong>Hasan &bull; CV Online</strong>
+        <p>Dibuat dengan HTML5, CSS3 murni & JavaScript interaktif.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" id="back-to-top" title="Kembali ke atas">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification untuk Copy/Feedback -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-text">Teks berhasil disalin ke papan klip!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+

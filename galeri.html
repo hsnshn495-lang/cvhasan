@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Perjalanan & Kegiatan Seharian Hasan: Dari Masa Kuliah Hingga Field Education di Ruangguru">
+  <title>Galeri Kegiatan Seharian | Masa Kuliah s/d Field Education Ruangguru - Hasan</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Styles & Gallery Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="galeri.css">
+</head>
+<body data-theme="light">
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo" title="Kembali ke Beranda CV">
+        <span class="logo-badge">H</span>
+        <span class="logo-text">Hasan<span>.Galeri</span></span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fa-solid fa-arrow-left"></i> Kembali ke CV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#biodata" class="nav-link">
+              <i class="fa-regular fa-user"></i> Biodata
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#pengalaman" class="nav-link">
+              <i class="fa-solid fa-briefcase"></i> Pengalaman
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="galeri.html" class="nav-link active">
+              <i class="fa-solid fa-camera-retro"></i> Galeri Perjalanan
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Add Activity Button -->
+        <button class="btn btn-primary btn-add-top" id="btn-open-modal-nav" title="Tambah Foto Kegiatan Baru">
+          <i class="fa-solid fa-plus"></i>
+          <span>Tambah Foto</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button class="theme-btn" id="theme-btn" aria-label="Ganti Tema Mode Gelap/Terang" title="Ubah Tema">
+          <i class="fa-regular fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="nav-toggle" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    
+    <!-- Hero / Header Galeri -->
+    <section class="gallery-hero section">
+      <div class="container text-center">
+        <div class="badge-status">
+          <span class="status-dot"></span> Rekam Jejak Kuliah & Karier Lapangan
+        </div>
+        <h1 class="gallery-title">
+          Galeri Kegiatan Seharian <br>
+          <span class="text-gradient">Masa Kuliah hingga Field Education di Ruangguru</span>
+        </h1>
+        <p class="gallery-subtitle">
+          Dokumentasi visual rutinitas harian saya sepanjang perjalanan hidup — mulai dari masa perjuangan akademik dan organisasi di bangku kuliah, hingga dedikasi saat ini sebagai <strong>Field Education di Ruangguru</strong> dalam mengedukasi siswa, orang tua, dan sekolah. Anda bebas menambahkan foto kegiatan baru kapan saja!
+        </p>
+
+        <!-- Gallery Summary Stats -->
+        <div class="gallery-stats">
+          <div class="stat-box card">
+            <i class="fa-solid fa-images stat-icon"></i>
+            <div>
+              <span class="stat-number" id="total-photos-count">0</span>
+              <span class="stat-label">Total Dokumentasi Foto</span>
+            </div>
+          </div>
+          <div class="stat-box card">
+            <i class="fa-solid fa-graduation-cap stat-icon text-indigo"></i>
+            <div>
+              <span class="stat-number" id="kuliah-photos-count">0</span>
+              <span class="stat-label">Foto Masa Kuliah</span>
+            </div>
+          </div>
+          <div class="stat-box card">
+            <i class="fa-solid fa-chalkboard-user stat-icon text-ruangguru"></i>
+            <div>
+              <span class="stat-number" id="ruangguru-photos-count">0</span>
+              <span class="stat-label">Field Education Ruangguru</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Banner -->
+        <div class="cta-upload-box card">
+          <div class="cta-upload-content">
+            <div class="cta-icon-wrapper">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="cta-text">
+              <h3>Ingin Menambahkan Dokumentasi Foto Baru?</h3>
+              <p>Unggah foto dari perangkat Anda (komputer/HP), tentukan apakah momen masa kuliah atau aktivitas kerja di Ruangguru, atur jam dan ceritakan kisahnya.</p>
+            </div>
+          </div>
+          <div class="cta-upload-actions">
+            <button class="btn btn-primary" id="btn-open-modal-hero">
+              <i class="fa-solid fa-plus-circle"></i> Tambah Foto Kegiatan
+            </button>
+            <button class="btn btn-outline" id="btn-reset-data" title="Kembalikan foto contoh bawaan">
+              <i class="fa-solid fa-rotate-left"></i> Reset Contoh
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Controls & Filters -->
+    <section class="gallery-feed section">
+      <div class="container">
+        
+        <div class="feed-header-controls">
+          
+          <!-- Filter Berdasarkan Fase Perjalanan (Era) -->
+          <div class="era-filter-wrapper">
+            <span class="filter-group-title"><i class="fa-solid fa-timeline"></i> Filter Fase Perjalanan:</span>
+            <div class="era-filter-tabs">
+              <button class="filter-tab era-btn active" data-era="all">
+                <i class="fa-solid fa-layer-group"></i> Semua Fase
+              </button>
+              <button class="filter-tab era-btn tab-kuliah" data-era="kuliah">
+                <i class="fa-solid fa-graduation-cap"></i> 🎓 Masa Kuliah
+              </button>
+              <button class="filter-tab era-btn tab-ruangguru" data-era="ruangguru">
+                <i class="fa-solid fa-chalkboard-user"></i> 🚀 Field Education Ruangguru
+              </button>
+            </div>
+          </div>
+
+          <!-- Filter Waktu Seharian (Jam/Waktu) & Pencarian -->
+          <div class="secondary-controls-row">
+            <!-- Filter Tabs Berdasarkan Waktu -->
+            <div class="time-filter-tabs">
+              <button class="filter-pill time-btn active" data-time="all">Semua Waktu</button>
+              <button class="filter-pill time-btn" data-time="pagi">🌅 Pagi</button>
+              <button class="filter-pill time-btn" data-time="siang">☀️ Siang</button>
+              <button class="filter-pill time-btn" data-time="sore">🌇 Sore</button>
+              <button class="filter-pill time-btn" data-time="malam">🌙 Malam</button>
+            </div>
+
+            <!-- Search Input -->
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="search-input" placeholder="Cari kegiatan, sekolah, materi..." autocomplete="off">
+              <button id="clear-search-btn" title="Hapus pencarian" style="display: none;">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Grid Galeri Foto -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Kartu kegiatan akan di-render secara dinamis oleh JavaScript -->
+        </div>
+
+        <!-- Empty State jika tidak ada foto / hasil filter kosong -->
+        <div class="empty-state card" id="empty-state" style="display: none;">
+          <div class="empty-icon">
+            <i class="fa-regular fa-image"></i>
+          </div>
+          <h3>Belum Ada Foto Kegiatan</h3>
+          <p id="empty-state-desc">Belum ada foto yang sesuai dengan filter atau kata kunci yang dipilih.</p>
+          <button class="btn btn-primary" id="btn-empty-add">
+            <i class="fa-solid fa-plus"></i> Tambah Foto Sekarang
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       MODAL FORM: INPUT FOTO KEGIATAN BARU
+       ========================================== -->
+  <div class="modal-overlay" id="upload-modal" aria-hidden="true">
+    <div class="modal-card card" role="dialog" aria-labelledby="modal-title">
+      
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <i class="fa-solid fa-camera"></i>
+          <h2 id="modal-title">Tambah Dokumentasi Kegiatan</h2>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Formulir">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="activity-form" class="activity-form">
+        
+        <!-- Pilihan Fase Perjalanan (Era) -->
+        <div class="form-group">
+          <label class="form-label">
+            <i class="fa-solid fa-timeline"></i> Fase Perjalanan <span class="required">*</span>
+          </label>
+          <div class="era-radio-group">
+            <label class="era-radio-label">
+              <input type="radio" name="form-era" value="ruangguru" checked>
+              <span class="era-radio-card ruangguru-card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <strong>Field Education Ruangguru</strong>
+                <small>Aktivitas kerja, sosialisasi sekolah, konsultasi</small>
+              </span>
+            </label>
+            <label class="era-radio-label">
+              <input type="radio" name="form-era" value="kuliah">
+              <span class="era-radio-card kuliah-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <strong>Masa Perkuliahan</strong>
+                <small>Akademik, praktikum lab, organisasi, tugas</small>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Area Input Foto (Drag & Drop / File Selector) -->
+        <div class="form-group">
+          <label class="form-label">
+            <i class="fa-regular fa-image"></i> Foto Kegiatan <span class="required">*</span>
+          </label>
+          
+          <div class="drop-zone" id="drop-zone">
+            <input type="file" id="file-input" accept="image/*" class="file-input-hidden">
+            
+            <div class="drop-zone-prompt" id="drop-prompt">
+              <div class="upload-icon-circle">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <p class="drop-title">Pilih foto dari perangkat atau seret foto ke sini</p>
+              <p class="drop-subtitle">Mendukung format JPG, PNG, WEBP, GIF (Bebas ukuran foto)</p>
+              <button type="button" class="btn btn-outline btn-sm" id="btn-browse-file">
+                <i class="fa-solid fa-folder-open"></i> Jelajahi File
+              </button>
+            </div>
+
+            <!-- Preview Image Container -->
+            <div class="drop-zone-preview" id="drop-preview" style="display: none;">
+              <img src="" alt="Pratinjau Foto" id="preview-img">
+              <div class="preview-overlay">
+                <button type="button" class="btn-change-photo" id="btn-change-photo" title="Ganti Foto">
+                  <i class="fa-solid fa-arrows-rotate"></i> Ganti Foto
+                </button>
+              </div>
+            </div>
+          </div>
+          <small class="form-help">Foto akan dioptimasi otomatis dan disimpan di peramban Anda dengan aman.</small>
+        </div>
+
+        <div class="form-row-2">
+          <!-- Waktu Kegiatan -->
+          <div class="form-group">
+            <label for="activity-time" class="form-label">
+              <i class="fa-regular fa-clock"></i> Jam / Waktu <span class="required">*</span>
+            </label>
+            <input type="time" id="activity-time" required class="form-control" value="09:00">
+          </div>
+
+          <!-- Kategori Waktu -->
+          <div class="form-group">
+            <label for="activity-category" class="form-label">
+              <i class="fa-regular fa-calendar-check"></i> Kategori Jam <span class="required">*</span>
+            </label>
+            <select id="activity-category" class="form-control" required>
+              <option value="pagi">🌅 Pagi Hari (05:00 - 11:00)</option>
+              <option value="siang">☀️ Siang Hari (11:00 - 15:00)</option>
+              <option value="sore">🌇 Sore Hari (15:00 - 18:30)</option>
+              <option value="malam">🌙 Malam Hari (18:30 - Selesai)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Judul Kegiatan -->
+        <div class="form-group">
+          <label for="activity-title" class="form-label">
+            <i class="fa-solid fa-heading"></i> Judul Kegiatan <span class="required">*</span>
+          </label>
+          <input type="text" id="activity-title" class="form-control" placeholder="Contoh: Sosialisasi Aplikasi Ruangguru ke Siswa SMA, Praktikum Lab..." required maxlength="90">
+        </div>
+
+        <!-- Lokasi -->
+        <div class="form-group">
+          <label for="activity-location" class="form-label">
+            <i class="fa-solid fa-location-dot"></i> Lokasi Kegiatan
+          </label>
+          <input type="text" id="activity-location" class="form-control" placeholder="Contoh: SMA Negeri 1 / Ruang Kelas / Kantor Ruangguru / Kampus" maxlength="60">
+        </div>
+
+        <!-- Deskripsi Kegiatan -->
+        <div class="form-group">
+          <label for="activity-desc" class="form-label">
+            <i class="fa-solid fa-align-left"></i> Cerita / Deskripsi Kegiatan
+          </label>
+          <textarea id="activity-desc" class="form-control" rows="3" placeholder="Ceritakan apa yang dilakukan, kesan, atau tantangan pada kegiatan ini..." maxlength="350"></textarea>
+        </div>
+
+        <!-- Modal Actions -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="btn-cancel-modal">Batal</button>
+          <button type="submit" class="btn btn-primary" id="btn-submit-activity">
+            <i class="fa-solid fa-check"></i> Simpan Dokumentasi
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       MODAL LIGHTBOX: LIHAT FOTO LENGKAP
+       ========================================== -->
+  <div class="lightbox-overlay" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Tutup Pratinjau">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-image-wrapper">
+        <img src="" alt="" id="lightbox-img">
+      </div>
+
+      <div class="lightbox-details">
+        <div class="lightbox-meta">
+          <span class="lightbox-era-badge" id="lightbox-era">Field Education Ruangguru</span>
+          <span class="lightbox-badge" id="lightbox-time">09:00 WIB</span>
+          <span class="lightbox-location" id="lightbox-location">
+            <i class="fa-solid fa-location-dot"></i> <span></span>
+          </span>
+        </div>
+        <h3 class="lightbox-title" id="lightbox-title">Judul Kegiatan</h3>
+        <p class="lightbox-desc" id="lightbox-desc">Deskripsi kegiatan.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <strong>Hasan &bull; Perjalanan Kuliah hingga Field Education Ruangguru</strong>
+        <p>Dokumentasi foto kegiatan harian dengan kebebasan unggah foto mandiri.</p>
+      </div>
+      <div class="footer-right">
+        <a href="index.html" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-arrow-left"></i> Kembali ke Halaman CV
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-text">Pesan notifikasi</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="galeri.js"></script>
+</body>
+</html>
